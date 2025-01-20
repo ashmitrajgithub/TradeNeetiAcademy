@@ -1,7 +1,7 @@
 
 import QuestionsItems from "./QuestionsItems";
 
-const Questions = () => {
+const Questions = ({ scroll }) => {
 
     const questions = [
         {
@@ -33,7 +33,7 @@ const Questions = () => {
     return (
         <>
             <section
-                className= "questions flex flex-col items-center justify-center p-8 mt-20 opacity-100 bg-pattern "
+                className={`questions flex flex-col items-center justify-center p-8 mt-20 opacity-100 bg-pattern ${scroll}`}
             >
                 <h2 className="mb-8 text-2xl font-bold text-center md:text-4xl">Frequently asked questions</h2>
                 

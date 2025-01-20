@@ -1,0 +1,90 @@
+/* Faculty Card Container */
+.faculty-card {
+  position: relative;
+  display: grid;
+  height: 28rem;
+  width: 100%;
+  max-width: 100%; /* Remove max-width limit for responsive layout */
+  margin: 0; /* Remove margin between cards */
+  justify-content: center;
+  align-items: end;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header (Image Section) */
+.faculty-card-header {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.faculty-card-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.faculty-card-overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+}
+
+/* Card Body (Text Section) */
+.faculty-card-body {
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+.faculty-card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.faculty-card-subtitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #b0b0b0;
+}
+
+.faculty-card-description {
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+/* Layout for larger screens (4 cards per row) */
+@media (min-width: 1200px) {
+  .faculty-card {
+    width: calc(25% - 1rem); /* 4 cards per row with some space in between */
+    margin: 0.5rem;
+  }
+}
+
+/* Layout for medium screens (2 cards per row) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .faculty-card {
+    width: calc(50% - 1rem); /* 2 cards per row with space */
+    margin: 0.5rem;
+  }
+}
+
+/* Layout for small screens (1 card per row) */
+@media (max-width: 767px) {
+  .faculty-card {
+    width: calc(100% - 1rem); /* 1 card per row */
+    margin: 0.5rem;
+  }
+}

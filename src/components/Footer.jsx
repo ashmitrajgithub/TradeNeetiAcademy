@@ -4,7 +4,7 @@ import { IoLogoTwitter } from "react-icons/io";
 function Footer() {
     return (
         <>
-            <footer className="relative z-50 bg-white px-8 pb-6 pt-12 ml-10 mr-10 mt-10 rounded-3xl shadow-2xl sm:px-4 sm:py-4">
+            <footer className="relative z-50 bg-white px-8 pb-6 pt-12 m-0 rounded-3xl shadow-2xl sm:px-4 sm:py-4">
                 <div className="flex flex-wrap justify-between items-center mb-5 gap-4 pl-8 pr-8">
                     <img src="\src\assets\treadneetiLogo1.png" alt="logo" className="w-32 mb-2" />
                     <div className="flex gap-4">
