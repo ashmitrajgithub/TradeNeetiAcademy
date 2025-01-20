@@ -1,0 +1,30 @@
+.whyuscontainer {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 0rem;
+}
+
+
+@media (max-width: 768px) {
+  .whyuscontainer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -3rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .whyuscontainer {
+    width: 110vw;
+    margin-top: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}

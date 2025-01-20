@@ -28,6 +28,7 @@ const Courses = ({ scroll }) => {
       name: "lorem",
       detail: "Get tailored solutions to meet your unique business needs and goals.",
     },
+    
   ];
 
   return (

@@ -1,4 +1,5 @@
-import FacultyItems from "./FacultyItems";
+import React from "react";
+import "./Faculty.css"; // Import the CSS file
 
 function Faculty() {
   const facultyList = [
@@ -20,22 +21,32 @@ function Faculty() {
       description: "Crafting user-centered designs for web and mobile apps.",
       name: "Michael Lee",
     },
+    {
+      imageUrl: "\\src\\assets\\landingImg3.jpg",
+      title: "UI/UX Design Principles",
+      description: "Crafting user-centered designs for web and mobile apps.",
+      name: "Michael Lee",
+    },
   ];
 
   return (
     <>
-      <h3 className="text-center text-4xl font-bold mb-16">Our Faculty</h3>
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex items-center">
-      {facultyList.map((faculty, index) => (
-        <FacultyItems
-          key={index}
-          imageUrl={faculty.imageUrl}
-          title={faculty.title}
-          description={faculty.description}
-          name={faculty.name}
-        />
-      ))}
-    </section>
+      <h3 className="faculty-title">Our Faculty</h3>
+      <section className="faculty-grid">
+        {facultyList.map((faculty, index) => (
+          <div key={index} className="faculty-card">
+            <div className="faculty-card-header">
+              <img src={faculty.imageUrl} alt={faculty.title} className="faculty-card-image" />
+              <div className="faculty-card-overlay" />
+            </div>
+            <div className="faculty-card-body">
+              <h2 className="faculty-card-title">{faculty.title}</h2>
+              <h5 className="faculty-card-subtitle">{faculty.name}</h5>
+              <p className="faculty-card-description">{faculty.description}</p>
+            </div>
+          </div>
+        ))}
+      </section>
     </>
   );
 }
