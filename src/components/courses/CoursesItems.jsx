@@ -1,6 +1,6 @@
 const CoursesItems = ({ image, name, detail }) => {
     return (
-      <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transform hover:-translate-y-5 transition-transform duration-300">
+      <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transform hover:-translate-y-5 transition-transform duration-300 courses">
         <div className="w-full h-52 p-2 box-border">
           <img
             src={image}

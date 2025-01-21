@@ -3,8 +3,9 @@ import { FaInstagramSquare, FaFacebook, FaTelegram, FaMapMarkerAlt } from "react
 import { IoLogoTwitter } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-import Hamburger from "./Hamburger";
-import Location from "../Location/Location";
+import Hamburger from "./hamburger";
+import Location from "../location/Location";
+import "./header.css"
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -14,8 +15,8 @@ function Header() {
   const toggleLocationPopup = () => setIsLocationPopupOpen(!isLocationPopupOpen);
 
   return (
-    <div>
-      <div className="w-full topbar bg-gray-100 py-2 fixed top-0 z-50">
+    <div className="main-header">
+      <div className="w-full topbar bg-gray-100 py-2 fixed top-0 z-50 main-header">
         <div className="headerInfo bg-brown-700 flex flex-wrap justify-between items-center gap-2 text-sm sm:text-base px-4 sm:px-16">
           <div className="headerContact flex flex-wrap gap-4 items-center">
             <a href="tel:+91-6206256034" className="flex items-center gap-1">
@@ -49,12 +50,12 @@ function Header() {
         </div>
       </div>
 
-      <header className="w-full bg-gray-100 p-4 px-4 sm:px-16 fixed top-10 z-50">
+      <header className="w-full bg-gray-100 p-2  px-5 sm:px-3 md:pl-7 md:pr-7 fixed top-9 z-50 main-header">
         <div className="flex justify-between items-center">
           <div>
-            <img src="/src/assets/treadneetiLogo1.png" alt="TREADNEETI" className="h-7 w-auto sm:h-10" />
+          <img src="\public\assets\treadneetiLogo1.png" alt="TREADNEETI" className="h-7 w-auto sm:h-10" />
           </div>
-          <div className="hidden md:flex justify-evenly gap-8 text-blue-600 font-semibold">
+          <div className="hidden md:flex justify-evenly gap-8  font-semibold">
             <a href="#">Home</a>
             <a href="#">Profile</a>
             <a href="#">Contact Us</a>

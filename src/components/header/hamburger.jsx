@@ -10,7 +10,7 @@ function Hamburger({toggleMenu})  {
                 <GiCancel size={28} color=""/>
             </div>
         
-                    <ul className="flex flex-col items-center gap-4 py-4 text-blue-600 font-semibold">
+                    <ul className="flex flex-col items-center gap-4 py-5  font-semibold">
                         <li>
                             <a
                                 href="#"
@@ -62,4 +62,4 @@ function Hamburger({toggleMenu})  {
     )
 };
 
-export default Hamburger
+export default Hamburger;

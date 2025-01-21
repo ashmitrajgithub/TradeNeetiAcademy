@@ -1,44 +1,48 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";  
+import "./Landing.css"
 
-const Landing = () => {
-    const images = [
-        "\\src\\assets\\01.jpg",
-        "\\src\\assets\\02.jpg",
-        "\\src\\assets\\03.jpg"
-    ];
+const Landing = () => {     
+    const images = [         
+        "/public/assets/01.jpg",         
+        "/public/assets/02.jpg",         
+        "/public/assets/03.jpg"     
+    ];      
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);      
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000); // Change image every 5 seconds
+    useEffect(() => {         
+        const interval = setInterval(() => {             
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);         
+        }, 5000); // Change image every 5 seconds          
 
-        return () => clearInterval(interval); // Cleanup on component unmount
-    }, [images.length]);
+        return () => clearInterval(interval); // Cleanup on component unmount     
+    }, [images.length]);      
 
-    return (
-        <div className='relative w-full mt-32 h-1/2 md:h-screen'>
-            <div className="w-full h-4/5">
-                <img
-                    className="w-full h-full object-cover transition-opacity duration-1000"
-                    src={images[currentIndex]}
-                    alt={`Slide ${currentIndex + 1}`}
-                />
+    return (         
+        <div>
+            <div className='relative w-full mx-auto mt-32 h-[400px] md:h-[500px] image-slider-container'>             
+                <div className="w-full h-full">                 
+                    <img                     
+                        className="w-full h-full object-cover transition-opacity duration-1000 image-slide-item"                     
+                        src={images[currentIndex]}                     
+                        alt={`Slide ${currentIndex + 1}`}                 
+                    />             
+                </div>             
+
+                {/* Optional: Add indicators */}             
+                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-2 button-position">                 
+                    {images.map((_, index) => (                     
+                        <div                         
+                            key={index}                         
+                            className={`w-3 h-3 rounded-full ${                             
+                                index === currentIndex ? "bg-blue-500" : "bg-gray-400"                         
+                            }`}                     
+                        ></div>                 
+                    ))}             
+                </div>         
             </div>
-            {/* Optional: Add indicators */}
-            <div className="absolute bottom-44 left-1/2 transform-translate-x-1/2 flex space-x-2">
-                {images.map((_, index) => (
-                    <div
-                        key={index}
-                        className={`w-3 h-3 rounded-full ${
-                            index === currentIndex ? "bg-blue-500" : "bg-gray-400"
-                        }`}
-                    ></div>
-                ))}
-            </div>
-        </div>
-    );
-};
+        </div>     
+    ); 
+};  
 
 export default Landing;

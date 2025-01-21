@@ -1,53 +1,51 @@
 import ServicesItem from "./WhyUsItems";
-import './whyUs.css';
 
 function WhyUs() {
+
   const services = [
     {
       index: "1",
-      image: "\\src\\assets\\01.jpg",
-      title: "1. Why Choose Us?",
-      description:
-        "With Trade Neeti, you're not just learning; you're transforming into a confident and skilled trader. We combine theoretical knowledge with real-world applications, ensuring our students excel in the competitive world of trading.",
+      image: "\\public\\assets\\landingImg.jpg",
+      title: "Own a Website that Works",
+      description: "It must look great and you want it to work all the time. I help you by designing, building, and hosting a beautiful site that'll grow your business.",
     },
     {
       index: "2",
-      image: "\\src\\assets\\02.jpg",
-      title: "2. 📘 What We Offer:",
-      description:
-        "Comprehensive stock market courses (from basics to advanced levels). Guidance for NISM certification and job placement in the financial industry. Hands-on training in live market scenarios. Exclusive trading boot camps for beginners and experts. Broking services and stock market advisory.",
+      image: "\\public\\assets\\landingImg2.jpg",
+      title: "Boost Your Online Presence",
+      description: "I help you create a professional and engaging website that attracts visitors and drives conversions.",
     },
     {
       index: "3",
-      image: "\\src\\assets\\03.jpg",
-      title: "3. 🚀 Our Mission:",
-      description:
-        "To empower individuals with the knowledge and confidence to navigate the financial markets and achieve their trading goals.",
+      image: "\\public\\assets\\landingImg3.jpg",
+      title: "Mobile-Friendly Designs",
+      description: "Ensure your website works seamlessly on all devices, providing a great user experience.",
     },
     {
       index: "4",
-      image: "\\src\\assets\\04.jpg",
-      title: "4. Custom Web Solutions",
+      image: "\\public\\assets\\landingImg.jpg",
+      title: "Custom Web Solutions",
       description: "Get tailored solutions to meet your unique business needs and goals.",
     },
   ];
-
   return (
-    <section className={`mx-3 mt-6 md:mx-14 whyuscontainer`}>
-      <h2 className="text-center text-1xl md:text-4xl font-bold mb-6">
-        Ways I can help you
-      </h2>
-      {services.map((service, index) => (
-        <ServicesItem
-          key={index}
-          image={service.image}
-          title={service.title}
-          description={service.description}
-          isReverse={index % 2 !== 0} // Adjusted for 0-based index
-        />
-      ))}
-    </section>
-  );
-}
+    <>
+      <section className="mx-5 md:mx-16 flex flex-col items-center">
+  <h2 className="text-center text-2xl m-5 md:pb-6 md:text-4xl font-bold ">Ways I can help you</h2>
+  {services.map((service, index) => (
+    <ServicesItem
+      key={index}
+      image={service.image}
+      title={service.title}
+      description={service.description}
+      isReverse={index % 2 !== 0} // Adjusted for 0-based index
+      scroll={scroll}
+    />
+  ))}
+</section>
+
+</>
+  )
+};
 
 export default WhyUs;

@@ -1,7 +1,7 @@
 .app{
     /* background: rgb(141,185,217);
     background: radial-gradient(circle, rgba(141,185,217,0.8240546218487395) 5%, rgba(178,153,235,0.8772759103641457) 93%);  */
-    background: rgb(212, 233, 222);
+    background: rgb(229, 230, 236);
     
 }
 .hamburger{
@@ -25,7 +25,47 @@
     -webkit-backdrop-filter: blur(16px);
     z-index: 100;
 }
+
+
+
+.courses{
+    background: linear-gradient(
+            180deg,
+            rgba(142, 108, 172, 0.6) 50%,
+            rgba(161, 219, 227, 0.7) 0%,
+            rgba(191, 168, 215, 0.642) 100%
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(173, 142, 199, 0.7) 0%,
+            rgba(203, 229, 233, 0.5) 0%,
+            rgba(254, 214, 214, 0) 50%
+        );
+    background-blend-mode: overlay;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
 .whyUs{
+    background: linear-gradient(
+            180deg,
+            rgba(205,208,236, 0.7) 0%,
+            rgba(169,214,230, 0.6) 50%,
+            rgba(106,143,180, 0.642) 100%
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(255, 255, 255, 0.7) 0%,
+            rgba(255, 255, 255, 0.5) 0%,
+            rgba(255, 255, 255, 0) 50%
+        );
+    background-blend-mode: overlay;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+
+.currentStatus{
     background: linear-gradient(
             180deg,
             rgba(174, 217, 255, 0.7) 0%,
@@ -42,37 +82,44 @@
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 }
-.currentStatus{
-    background: linear-gradient(
-            180deg,
-            rgba(166, 254, 216, 0.7) 0%,
-            rgba(112, 81, 139, 0.6) 50%,
-            rgba(197, 164, 230, 0.642) 100%
-        ),
-        radial-gradient(
-            circle at 50% 50%,
-            rgba(255, 255, 255, 0.7) 0%,
-            rgba(255, 255, 255, 0.5) 0%,
-            rgba(255, 255, 255, 0) 50%
-        );
-    background-blend-mode: overlay;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-}
+
 .form{
     background: linear-gradient(
             180deg,
-            rgba(166, 254, 216, 0.7) 0%,
+            rgba(176,214,233, 0.7) 0%,
             rgba(112, 81, 139, 0.6) 50%,
             rgba(197, 164, 230, 0.642) 100%
         ),
         radial-gradient(
             circle at 90% 90%,
-            rgba(185, 135, 135, 0.7) 0%,
-            rgba(208, 184, 123, 0.5) 50%,
+            rgba(162,163,218, 0.7) 0%,
+            rgba(151,164,217, 0.5) 50%,
             rgba(127, 199, 162, 0) 100%
         );
     background-blend-mode: overlay;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 }
+
+.footer{
+    background: linear-gradient(
+            180deg,
+            rgba(197, 164, 230, 0.7) 0%,
+            rgba(114, 81, 143, 0.6) 50%,
+            rgba(201, 168, 234, 0.642) 100%
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(232, 100, 230, 0.7) 0%,
+            rgba(251, 251, 251, 0.5) 0%,
+            rgba(198, 126, 213, 0.2) 50%
+        );
+    background-blend-mode: overlay;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+
+
+
+

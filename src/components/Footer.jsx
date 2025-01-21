@@ -4,9 +4,10 @@ import { IoLogoTwitter } from "react-icons/io";
 function Footer() {
     return (
         <>
-            <footer className="relative z-50 bg-white px-8 pb-6 pt-12 m-0 rounded-3xl shadow-2xl sm:px-4 sm:py-4">
-                <div className="flex flex-wrap justify-between items-center mb-5 gap-4 pl-8 pr-8">
-                    <img src="\src\assets\treadneetiLogo1.png" alt="logo" className="w-32 mb-2" />
+        
+            <footer className="bg-gray-200 relative overflow-hidden z-10  rounded-3xl shadow-2xl  footer">
+                <div className="flex flex-wrap justify-between items-center mb-5 gap-4 p-5 ">
+                    <img src="\public\assets\treadneetiLogo1.png" alt="logo" className="w-32 mb-2" />
                     <div className="flex gap-4">
                         <a href="#" target="_blank" rel="noreferrer" className="text-2xl text-primary hover:text-blue-500">
                             <FaTelegram />
@@ -23,9 +24,9 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="container mx-auto">
+                <div className="container mx-auto pl-4 pr-4 pb-4">
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <div className="w-full md:w-4/12 xl:w-2/12">
+                        <div className="w-5/12 xl:w-2/12">
                             <h5 className="text-lg font-bold text-primary mb-2">Company</h5>
                             <ul className="list-none space-y-1">
                                 <li>
@@ -61,7 +62,7 @@ function Footer() {
                             </ul>
                         </div>
 
-                        <div className="w-full md:w-5/12 xl:w-2/12">
+                        <div className="w-5/12  xl:w-2/12">
                             <h5 className="text-lg font-bold text-primary mb-2">Help and Support</h5>
                             <ul className="list-none space-y-1">
                                 <li>
@@ -97,7 +98,7 @@ function Footer() {
                             </ul>
                         </div>
 
-                        <div className="w-full md:w-4/12 xl:w-2/12">
+                        <div className="w-5/12  xl:w-2/12 ">
                             <h5 className="text-lg font-bold text-primary mb-2">Resources</h5>
                             <ul className="list-none space-y-1">
                                 <li>
@@ -132,7 +133,7 @@ function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="w-full md:w-5/12 xl:w-3/12">
+                        <div className="w-5/12 xl:w-3/12 ">
                             <h5 className="text-lg font-bold text-primary mb-2">Address</h5>
                             <ul className="list-none space-y-1">
                                 <li>
@@ -179,6 +180,7 @@ function Footer() {
                     </div>
                 </div>
             </footer>
+            
         </>
     );
 }

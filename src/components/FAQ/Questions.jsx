@@ -1,7 +1,7 @@
 
 import QuestionsItems from "./QuestionsItems";
 
-const Questions = ({ scroll }) => {
+const Questions = () => {
 
     const questions = [
         {
@@ -32,15 +32,20 @@ const Questions = ({ scroll }) => {
 
     return (
         <>
+            <div className="relative h-36">
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-500 via-gray-400 to-transparent z-20"></div>
+            </div>
+
             <section
-                className={`questions flex flex-col items-center justify-center p-8 mt-20 opacity-100 bg-pattern ${scroll}`}
+                className="questions  flex flex-col items-center justify-center p-8 relative bg-gray-200 overflow-hidden z-10"
             >
-                <h2 className="mb-8 text-2xl font-bold text-center md:text-4xl">Frequently asked questions</h2>
-                
+                <h2 className="mb-8 md:mb-12 text-2xl font-bold text-center md:text-4xl">Frequently asked questions</h2>
+
                 {questions.map((question, index) => (
                     <QuestionsItems key={index} quest={question.quest} ans={question.ans} />
                 ))}
             </section>
+
 
         </>
     );

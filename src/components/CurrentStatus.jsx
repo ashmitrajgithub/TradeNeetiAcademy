@@ -5,7 +5,7 @@ function CurrentStatus() {
 
         <>
      
-        <section class="currentStatus m-5 p-5 rounded-3xl md:m-10">
+        <section class="currentStatus m-5 p-5 rounded-3xl md:m-10 sticky top-0  z-10">
    <div class="">
       <div class="">
          <div class="">

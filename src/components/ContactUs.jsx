@@ -1,9 +1,19 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 function ContactUs() {
     return (
         <>
-            <div className=" px-4 mx-auto">
-                <div className="mx-auto">
-                    <div className="max-w-md mx-auto px-8 py-6 form rounded-lg shadow-lg">
+            <div className="px-4 mx-auto relative bg-gray-200 overflow-hidden z-10">
+                <div className="mx-auto flex flex-col lg:flex-row justify-around items-center ">
+                    <div className="hidden lg:block z-20 " style={{ width: '500px', height: '500px' }}>
+                        <DotLottieReact
+                            src="\public\assets\Animation - 1737385327834.lottie"
+                            loop
+                            autoplay
+                        />
+                    </div>
+
+                    <div className="w-full md:w-4/5 lg:max-w-lg px-8 py-6 my-6 form rounded-lg shadow-lg z-20">
                         <h2 className="text-2xl text-center font-semibold text-gray-800 mb-4">Book Demo Class</h2>
                         <form>
                             <div className="mb-4">
@@ -52,7 +62,7 @@ function ContactUs() {
                                 Send Message
                             </button>
                         </form>
-                        
+
                     </div>
                 </div>
             </div>

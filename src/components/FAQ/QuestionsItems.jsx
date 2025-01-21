@@ -8,7 +8,7 @@ const QuestionsItems = ({ quest, ans }) => {
   };
 
   return (
-    <div className="flex flex-col  w-2/3 md:w-3/4 mb-6 ">
+    <div className="flex flex-col  w-3/3 md:w-3/4 mb-6 ">
       <div
         className="flex items-center justify-between text-lg font-medium cursor-pointer p-3 border-2 border-gray-300 rounded-t-lg"
         onClick={toggleAnswer}

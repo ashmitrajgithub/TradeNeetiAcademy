@@ -4,25 +4,25 @@ import "./Faculty.css"; // Import the CSS file
 function Faculty() {
   const facultyList = [
     {
-      imageUrl: "\\src\\assets\\landingImg.jpg", // Replace with your local image paths
+      imageUrl: "\\public\\assets\\landingImg.jpg", // Replace with your local image paths
       title: "Mastering React Development",
       description: "Learn how to build dynamic user interfaces.",
       name: "John Doe",
     },
     {
-      imageUrl: "\\src\\assets\\landingImg2.jpg",
+      imageUrl: "\\public\\assets\\landingImg2.jpg",
       title: "Introduction to Data Science",
       description: "An overview of data science concepts and tools.",
       name: "Jane Smith",
     },
     {
-      imageUrl: "\\src\\assets\\landingImg3.jpg",
+      imageUrl: "\\public\\assets\\landingImg.jpg",
       title: "UI/UX Design Principles",
       description: "Crafting user-centered designs for web and mobile apps.",
       name: "Michael Lee",
     },
     {
-      imageUrl: "\\src\\assets\\landingImg3.jpg",
+      imageUrl: "\\public\\assets\\landingImg3.jpg",
       title: "UI/UX Design Principles",
       description: "Crafting user-centered designs for web and mobile apps.",
       name: "Michael Lee",
