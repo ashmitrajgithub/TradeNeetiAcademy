@@ -3,9 +3,9 @@ import "./Landing.css"
 
 const Landing = () => {     
     const images = [         
-        "/public/assets/01.jpg",         
-        "/public/assets/02.jpg",         
-        "/public/assets/03.jpg"     
+        "/assets/01.jpg",         
+        "/assets/02.jpg",         
+        "/assets/03.jpg"     
     ];      
 
     const [currentIndex, setCurrentIndex] = useState(0);      
