@@ -7,7 +7,7 @@ function Footer() {
         
             <footer className="bg-gray-200 relative overflow-hidden z-10  rounded-3xl shadow-2xl  footer">
                 <div className="flex flex-wrap justify-between items-center mb-5 gap-4 p-5 ">
-                    <img src="\public\assets\treadneetiLogo1.png" alt="logo" className="w-32 mb-2" />
+                    <img src="\assets\treadneetiLogo1.png" alt="logo" className="w-32 mb-2" />
                     <div className="flex gap-4">
                         <a href="#" target="_blank" rel="noreferrer" className="text-2xl text-primary hover:text-blue-500">
                             <FaTelegram />

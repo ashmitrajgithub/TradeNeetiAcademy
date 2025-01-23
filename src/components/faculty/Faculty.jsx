@@ -1,28 +1,29 @@
 import React from "react";
 import "./Faculty.css"; // Import the CSS file
+import Courses from "../courses/Courses"; // Import the Courses component
 
 function Faculty() {
   const facultyList = [
     {
-      imageUrl: "\\public\\assets\\landingImg.jpg", // Replace with your local image paths
+      imageUrl: "\\assets\\landingImg.jpg", // Replace with your local image paths
       title: "Mastering React Development",
       description: "Learn how to build dynamic user interfaces.",
       name: "John Doe",
     },
     {
-      imageUrl: "\\public\\assets\\landingImg2.jpg",
+      imageUrl: "\\assets\\landingImg2.jpg",
       title: "Introduction to Data Science",
       description: "An overview of data science concepts and tools.",
       name: "Jane Smith",
     },
     {
-      imageUrl: "\\public\\assets\\landingImg.jpg",
+      imageUrl: "\\assets\\landingImg.jpg",
       title: "UI/UX Design Principles",
       description: "Crafting user-centered designs for web and mobile apps.",
       name: "Michael Lee",
     },
     {
-      imageUrl: "\\public\\assets\\landingImg3.jpg",
+      imageUrl: "\\assets\\landingImg3.jpg",
       title: "UI/UX Design Principles",
       description: "Crafting user-centered designs for web and mobile apps.",
       name: "Michael Lee",
@@ -47,6 +48,9 @@ function Faculty() {
           </div>
         ))}
       </section>
+
+      {/* Calling Courses component here */}
+      <Courses />
     </>
   );
 }

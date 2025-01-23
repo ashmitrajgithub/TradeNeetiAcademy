@@ -4,27 +4,27 @@ import CoursesItems from "./CoursesItems";
 const Courses = ({ scroll }) => {
   const promise = [
     {
-      image: "/public/assets/landingImg.jpg",
+      image: "/assets/landingImg.jpg",
       name: "lorems",
       detail: "Get tailored solutions to meet your unique business needs and goals.",
     },
     {
-      image: "/public/assets/landingImg.jpg",
+      image: "/assets/landingImg.jpg",
       name: "lorem",
       detail: "Get tailored solutions to meet your unique business needs and goals.",
     },
     {
-      image: "/public/assets/landingImg.jpg",
+      image: "/assets/landingImg.jpg",
       name: "lorem",
       detail: "Get tailored solutions to meet your unique business needs and goals.",
     },
     {
-      image: "/public/assets/landingImg.jpg",
+      image: "/assets/landingImg.jpg",
       name: "lorem",
       detail: "Get tailored solutions to meet your unique business needs and goals.",
     },
     {
-      image: "/public/assets/landingImg.jpg",
+      image: "/assets/landingImg.jpg",
       name: "lorem",
       detail: "Get tailored solutions to meet your unique business needs and goals.",
     },

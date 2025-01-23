@@ -1,29 +1,30 @@
 import ServicesItem from "./WhyUsItems";
+import Faculty from "../faculty/Faculty";
 
 function WhyUs() {
 
   const services = [
     {
       index: "1",
-      image: "\\public\\assets\\landingImg.jpg",
+      image: "\\assets\\landingImg.jpg",
       title: "Own a Website that Works",
       description: "It must look great and you want it to work all the time. I help you by designing, building, and hosting a beautiful site that'll grow your business.",
     },
     {
       index: "2",
-      image: "\\public\\assets\\landingImg2.jpg",
+      image: "\\assets\\landingImg2.jpg",
       title: "Boost Your Online Presence",
       description: "I help you create a professional and engaging website that attracts visitors and drives conversions.",
     },
     {
       index: "3",
-      image: "\\public\\assets\\landingImg3.jpg",
+      image: "\\assets\\landingImg3.jpg",
       title: "Mobile-Friendly Designs",
       description: "Ensure your website works seamlessly on all devices, providing a great user experience.",
     },
     {
       index: "4",
-      image: "\\public\\assets\\landingImg.jpg",
+      image: "\\assets\\landingImg.jpg",
       title: "Custom Web Solutions",
       description: "Get tailored solutions to meet your unique business needs and goals.",
     },
@@ -43,6 +44,7 @@ function WhyUs() {
     />
   ))}
 </section>
+<Faculty/>
 
 </>
   )

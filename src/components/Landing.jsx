@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";  
 import "./Landing.css"
+import WhyUs from "./whyUs/WhyUs";
 
 const Landing = () => {     
     const images = [         
@@ -41,6 +42,7 @@ const Landing = () => {
                     ))}             
                 </div>         
             </div>
+            <WhyUs/>
         </div>     
     ); 
 };  

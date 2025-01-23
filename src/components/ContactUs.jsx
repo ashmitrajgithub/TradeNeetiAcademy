@@ -7,7 +7,7 @@ function ContactUs() {
                 <div className="mx-auto flex flex-col lg:flex-row justify-around items-center ">
                     <div className="hidden lg:block z-20 " style={{ width: '500px', height: '500px' }}>
                         <DotLottieReact
-                            src="\public\assets\Animation - 1737385327834.lottie"
+                            src="\assets\Animation - 1737385327834.lottie"
                             loop
                             autoplay
                         />

@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-import { FaInstagramSquare, FaFacebook, FaTelegram, FaMapMarkerAlt } from "react-icons/fa";  // Updated icon import
+import { FaInstagramSquare, FaFacebook, FaTelegram, FaMapMarkerAlt } from "react-icons/fa";  
 import { IoLogoTwitter } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import Hamburger from "./hamburger";
 import Location from "../location/Location";
-import "./header.css"
+import Landing from "../Landing";  // Import Landing component
+import "./header.css";
 
-function Header() {
+function Header({ toggleLocationPopup }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isLocationPopupOpen, setIsLocationPopupOpen] = useState(false);
 
   const toggleMenu = () => setIsNavOpen(!isNavOpen);
-  const toggleLocationPopup = () => setIsLocationPopupOpen(!isLocationPopupOpen);
+  const toggleLocationPopupHandler = () => setIsLocationPopupOpen(!isLocationPopupOpen);
 
   return (
     <div className="main-header">
@@ -42,20 +43,19 @@ function Header() {
             <a href="#" target="_blank">
               <FaTelegram size={20} className="text-gray-600 hover:text-gray-900" />
             </a>
-            {/* Location Icon */}
-            <button onClick={toggleLocationPopup}>
+            <button onClick={toggleLocationPopupHandler}>
               <FaMapMarkerAlt size={20} className="text-gray-600 hover:text-gray-900" />
             </button>
           </div>
         </div>
       </div>
 
-      <header className="w-full bg-gray-100 p-2  px-5 sm:px-3 md:pl-7 md:pr-7 fixed top-9 z-50 main-header">
+      <header className="w-full bg-gray-100 p-2 px-5 sm:px-3 md:pl-7 md:pr-7 fixed top-9 z-50 main-header">
         <div className="flex justify-between items-center">
           <div>
-          <img src="\public\assets\treadneetiLogo1.png" alt="TREADNEETI" className="h-7 w-auto sm:h-10" />
+            <img src="\public\assets\treadneetiLogo1.png" alt="TREADNEETI" className="h-7 w-auto sm:h-10" />
           </div>
-          <div className="hidden md:flex justify-evenly gap-8  font-semibold">
+          <div className="hidden md:flex justify-evenly gap-8 font-semibold">
             <a href="#">Home</a>
             <a href="#">Profile</a>
             <a href="#">Contact Us</a>
@@ -71,7 +71,10 @@ function Header() {
         </div>
       </header>
 
-      {isLocationPopupOpen && <Location closePopup={toggleLocationPopup} />}
+      {isLocationPopupOpen && <Location closePopup={toggleLocationPopupHandler} />}
+
+      {/* Landing component added here */}
+      <Landing />
     </div>
   );
 }
